@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addEditScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:useDefaultMargins="true" >
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/field_title"
+            android:imeOptions="actionNext" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/yearEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/field_year"
+            android:imeOptions="actionNext" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/directorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/field_director"
+            android:imeOptions="actionNext"  >
+        </EditText>  
+        
+        <EditText
+            android:id="@+id/typeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/field_type"
+            android:imeOptions="actionNext"  >
+        </EditText>
+
+        <Button
+            android:id="@+id/saveMovieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/button_save_movie" >
+        </Button>
+    </GridLayout>
+
+</ScrollView>
